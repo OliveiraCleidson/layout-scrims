@@ -57,7 +57,7 @@ header nav.navigation-bar img {
 }
 
 header nav.navigation-bar svg {
-  max-width: 50px;
+  width: 50px;
 }
 
 header nav.navigation-bar a,
