@@ -24,7 +24,14 @@ function handleCardTeamClick(secondChild) {
   let cardContent = cardTeam.childNodes[3];
   if (cardContent.classList.contains('visible')) {
     cardContent.classList.remove('visible');
+    cardContent.classList.add('out-animation');
   } else {
+    cardContent.classList.remove('out-animation');
     cardContent.classList.add('visible');
   }
+}
+
+function renderTeams() {
+  let item = document.querySelector('.cardTeam');
+  item.classList.add(".ho")
 }

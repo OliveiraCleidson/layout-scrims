@@ -206,13 +206,14 @@ main section.members div.cardMember div.info span.line {
   main section.teams div.cardTeam {
     flex-wrap: nowrap;
     max-width: 40%;
-    transition: all 1s linear;
+    transition: all 0.32 linear;
+    transition-delay: 0.5s;
   }
 
   main section.teams div.cardTeam.visible {
     max-width: 80%;
     width: 80%;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
   }
 
   main section.teams div.cardTeam div.cardLabel {
@@ -235,14 +236,33 @@ main section.members div.cardMember div.info span.line {
     max-width: 0;
     overflow: hidden;
     margin: auto;
-    transition: all 0.8s ease-out;
+    transition: all 0.5s linear;
+  }
+
+  .out-animation {
+    animation-name: outa;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+  }
+
+  @keyframes outa {
+    0% {
+      scale: 1;
+    }
+    50% {
+      scale: 2;
+    }
+    80% {
+      scale: 2;
+    }
+    100% {
+      scale: 0;
+    }
   }
 
   main section.teams div.cardTeam div.cardContent.visible {
     max-height: 100%;
     max-width: 100%;
-    transition: all 1s;
-    transition-delay: 1s;
   }
 
   main section.teams div.cardTeam div.cardLabel button {
@@ -299,7 +319,7 @@ main section.members div.cardMember div.info span.line {
     max-width: 30%;
   }
 
-  main section.teams div.cardTeam div.cardLabel:hover div.img {
+  .hov-aniamtion {
     animation: hov 0.5s;
   }
 
