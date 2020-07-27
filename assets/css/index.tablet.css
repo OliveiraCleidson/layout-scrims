@@ -1,0 +1,10 @@
+@media (max-width: 999px) {
+  header nav.navigation-bar ul.visible {
+    display: block;
+    width: 100%;
+  }
+
+  header nav.navigation-bar {
+    flex-wrap: wrap;
+  }
+}

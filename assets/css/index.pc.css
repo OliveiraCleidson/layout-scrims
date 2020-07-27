@@ -1,0 +1,47 @@
+@media (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+
+  /*Header and Menu */
+  header nav.navigation-bar ul {
+    list-style: none;
+    display: flex;
+    max-width: max-content;
+  }
+
+  header nav.navigation-bar button {
+    display: none;
+  }
+
+  /* Section Teams */
+  main section.teams div.cardTeam {
+    max-width: 30%;
+  }
+
+  main section.teams div.cardTeam div.cardLabel:hover div.img {
+    animation: hov 0.5s;
+  }
+
+  main section.teams div.cardTeam.visible {
+    max-width: 70%;
+  }
+
+  main section.teams div.cardTeam div.cardLabel button:hover {
+    scale: 1.2;
+    transition: all 0.2s;
+  }
+
+  main section.members div.cardMember:hover {
+    animation: hov 0.5s;
+  }
+
+  @keyframes hov {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: 360deg;
+    }
+  }
+}

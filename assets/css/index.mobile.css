@@ -1,0 +1,68 @@
+@media (min-width: 600px) {
+  html {
+    font-size: 22px;
+  }
+  /* Section Teams */
+  main section.teams div.cardTeam {
+    flex-wrap: nowrap;
+    max-width: 40%;
+    transition: all 1s linear;
+  }
+
+  main section.teams div.cardTeam.visible {
+    max-width: 80%;
+    width: 80%;
+    transition: all 1s linear;
+  }
+
+  main section.teams div.cardTeam div.cardLabel {
+    display: block;
+    max-width: 100%;
+  }
+
+  main section.teams div.cardTeam div.cardLabel div.img {
+    max-width: 100%;
+    max-height: 350px;
+    transition: all 1s linear;
+  }
+
+  main section.teams div.cardTeam div.cardLabel div.img img {
+    max-width: 100%;
+  }
+
+  main section.teams div.cardTeam div.cardContent {
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    margin: auto;
+    transition: all 0.8s ease-out;
+  }
+
+  main section.teams div.cardTeam div.cardContent.visible {
+    max-height: 100%;
+    max-width: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+
+  main section.teams div.cardTeam div.cardLabel button {
+    display: flex;
+    margin: auto;
+    font-size: 0.8rem;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(0, 23, 100, 1);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+  }
+
+  main section.teams div.cardTeam div.cardLabel button svg {
+    width: max(1.5vw, 25px);
+  }
+
+  main section.members div.cardMember {
+    max-width: 20%;
+  }
+}
