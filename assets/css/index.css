@@ -53,11 +53,11 @@ header nav.navigation-bar ul {
 }
 
 header nav.navigation-bar img {
-  max-height: 8vh;
+  max-height: 10vh;
 }
 
 header nav.navigation-bar svg {
-  max-width: 10vh;
+  max-width: 5vw;
 }
 
 header nav.navigation-bar a,
